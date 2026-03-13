@@ -1,47 +1,33 @@
-// list of product ids
-let productList = ["product_id_1", "product_id_2", "product_id_3"];
-
-// products
-const productA = {
-  productId: "product_id_1",
-  productName: "Executive Leather Laptop Backpack",
-  material: "Leather",
-  price: 2500
-};
-
-const productB = {
-  productId: "product_id_2",
-  productName: "Classic Office Tote Bag",
-  material: "Canvas",
-  price: 1200
-};
-
-const productC = {
-  productId: "product_id_3",
-  productName: "Professional Slim Briefcase",
-  material: "Synthetic Leather",
-  price: 1800
-};
-
-// cart
-let cart = [
+//Create a product list.
+const products = [
   {
-    productId: "product_id_1",
-    quantity: 1
+    id: "P001",
+    name: "Coat hanger",
+    price: 20,
+    stock: 10
   },
   {
-    productId: "product_id_2",
-    quantity: 2
+    id: "P002",
+    name: "Clothespin",
+    price: 10,
+    stock: 20
   },
   {
-    productId: "product_id_3",
-    quantity: 1
+    id: "P003",
+    name: "Bowl",
+    price: 40,
+    stock: 15
   }
 ];
 
-// check values
-console.log(productList);
-console.log(productA);
-console.log(productB);
-console.log(productC);
-console.log(cart);
+//View all products function.
+function viewProducts() {
+  console.log("Product List:");
+  products.forEach(product => {
+    console.log(product);
+  });
+}
+
+viewProducts();
+
+
