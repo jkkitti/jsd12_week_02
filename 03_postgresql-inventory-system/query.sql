@@ -7,7 +7,7 @@ SELECT
   sm.remarks        -- หมายเหตุ         มาจาก Stock_Movements
 FROM Stock_Movements sm   -- table หลักที่เริ่มดึง ย่อเป็น sm
 JOIN Products p           -- เชื่อม Products ย่อเป็น p
-  ON sm.product_id = p.product_id  -- เงื่อนไขการเชื่อม
+  ON sm.product_id = p.product_id  -- เงื่อนไขการเชื่อม 
                                    -- product_id ใน Stock_Movements
                                    -- ต้องตรงกับ product_id ใน Products
 JOIN Users u              -- เชื่อม Users ย่อเป็น u
