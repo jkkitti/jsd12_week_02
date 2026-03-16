@@ -9,5 +9,5 @@
 use("sample_mflix");
 
 // 1.1 ดึงข้อมูลทุก document จาก comments
-// {} ว่างเปล่า = ไม่มีเงื่อนไข = เอาทุกอย่าง
+// {} ว่างเปล่า = ไม่มีเงื่อนไข = เอาทุกอย่าง = เหมือน SELECT * FROM table
 db.comments.find({})

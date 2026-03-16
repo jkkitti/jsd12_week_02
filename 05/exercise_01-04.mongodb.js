@@ -9,4 +9,5 @@
 use("sample_mflix");
 
 // 1.4 ค้นหา 1 document โดยใช้ name
+// ใส่ filter ใน {} เพื่อกำหนดเงื่อนไข
 db.comments.findOne({ name: "John Bishop" })
